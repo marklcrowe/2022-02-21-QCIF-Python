@@ -63,21 +63,19 @@ It looks like you are setting up a website for a Software Carpentry curriculum b
 {% endif %}
 
 {% comment %}
-EVENTBRITE
+HUMANTIX
 
-This block includes the Eventbrite registration widget if
-'eventbrite' has been set in the header.  You can delete it if you
-are not using Eventbrite, or leave it in, since it will not be
-displayed if the 'eventbrite' field in the header is not set.
+This block includes the Humanitix registration widget if
+'humanitix' has been set in the header.  
 {% endcomment %}
-{% if page.eventbrite %}
+{% if page.humanitix %}
 <strong>Some adblockers block the registration window. If you do not see the
   registration box below, please check your adblocker settings.</strong>
 
-<iframe id="iframe-container" src="https://events.humanitix.com/{{page.humanitix}}/tickets" width="100%" height="600px" scrolling="auto" frameborder="0"></iframe>  
+<iframe id="iframe-container" src="https://events.humanitix.com/{{page.humanitix}}/tickets" width="90%" height="600px" scrolling="auto" frameborder="0"></iframe>  
+
 
 {% endif %}
-
 
 <h2 id="general">General Information</h2>
 
